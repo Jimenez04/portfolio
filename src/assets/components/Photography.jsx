@@ -1,21 +1,19 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import {React, useState, useEffect } from "react";
+import Pictures from "./pictures";
 import { useLocation } from "react-router-dom";
 
-var url_web_long = "src/assets/img/photography/long/";
-var url_web_wide = "src/assets/img/photography/Wide/";
-
 export default function Photography() {
+  const [img_wide, setImg_wide] = useState(Pictures[getnumber(20)+"w"]);
+  const [img_long, setImg_Long] = useState(Pictures[getnumber(11)]);
+
   const location = useLocation();
   useEffect(() => {
-    if (location.pathname === "/") { 
-      auto_wide();
-      auto_long();
+    if (location.pathname === "/") {
       const interval1 = setInterval(() => {
-        auto_wide();
+        setImg_wide(Pictures[getnumber(20)+"w"]);
       }, 12000);
-      const interval2 =setInterval(() => {
-        auto_long();
+      const interval2 = setInterval(() => {
+        setImg_Long(Pictures[getnumber(11)]);
       }, 15000);
       return () => {
         clearInterval(interval1);
@@ -23,6 +21,11 @@ export default function Photography() {
       };
     }
   }, []);
+
+  function getnumber(e) {
+    return Math.floor(Math.random() * e) + 1;
+  }
+
   return (
     <section id="photography">
       <div className="photography_container max_resolution">
@@ -30,34 +33,13 @@ export default function Photography() {
         <h3>Some photos</h3>
         <div className="photography_container_photos flex">
           <div id="container_image_wide">
-            <img src="" alt="" />
+            <img src={img_wide} />
           </div>
           <div id="container_image_long">
-            <img src="" alt="" />
+            <img src={img_long} />
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-
-
-function auto_wide() {
-    rellenar("container_image_wide", url_web_wide + getnumber(20) + ".webp"),
-            document.getElementById("container_image_wide").classList.remove("show_off"), rellenar("container_image_wide", url_web_wide + getnumber(20) + ".webp");
-}
-function auto_long() {
-    rellenar("container_image_long", url_web_long + getnumber(11) + ".webp"),
-      document.getElementById("container_image_long").classList.remove("show_off"), rellenar("container_image_long", url_web_long + getnumber(11) + ".webp");
-}
-function getnumber(e) {
-    return Math.floor(Math.random() * e) + 1;
-}
-async function rellenar(e, n) {
-    var o = document.getElementById(e);
-    var r = document.createElement("img");
-    o.classList.add("show_off");
-    (r.src = n), r.classList.add("lazyload"), (o.innerHTML = null), o.append(r);
-}
-
