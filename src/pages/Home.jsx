@@ -16,11 +16,11 @@ export default function Home() {
           </div>
           <div className="hero_span-container">
             <span>
-              Hi there, I look forward to you are well. I’m José a developer.
+              Hi there, I hope you are well. I am José a developer.
             </span>
           </div>
           <p>
-            I'm a highly skilled Software Developer with a strong background in programming languages and a proven track record of delivering high quality software solutions. Experienced in full-stack development and adapted at problem-solving and collaboration in diverse teams. I've recently finished my studies in Business Computer Science at the University of Costa Rica and am eager to apply the skills I acquired in an international company.
+          I am a highly skilled Software Developer with a strong background in programming languages and a proven track record of delivering high quality software solutions. Experienced in full-stack development and adapted at problem-solving and collaboration in diverse teams.
           </p>
         </div>
         <svg
@@ -37,8 +37,8 @@ export default function Home() {
       </section>
       <section className="home-about_me">
         <div className="home-about_me_container max_resolution">
-          <h2>A little about me</h2>
-          <h3>Along the years</h3>
+          <h2>Know me</h2>
+          {/* <h3>Along the years</h3> */}
           <div className="home-about_me_history_container flex">
             <div className="history_container_lines"></div>
             <div className="history_container_hidden-lines"></div>
