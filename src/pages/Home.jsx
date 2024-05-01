@@ -1,5 +1,5 @@
 import React from "react";
-import '../assets/css/home.css'
+import "../assets/css/home.css";
 import imgME from "../assets/img/me.webp";
 import wave from "../assets/img/svg/wave.svg";
 import Photography from "../assets/components/Photography";
@@ -15,12 +15,13 @@ export default function Home() {
             <img src={imgME} alt="Me" width="500" height="500" />
           </div>
           <div className="hero_span-container">
-            <span>
-              Hi there, I hope you are well. I am José a developer.
-            </span>
+            <span>Hi there, I hope you are well. I am a developer.</span>
           </div>
           <p>
-          I am a highly skilled Software Developer with a strong background in programming languages and a proven track record of delivering high quality software solutions. Experienced in full-stack development and adapted at problem-solving and collaboration in diverse teams.
+            I am a highly skilled Software Developer with a strong background in
+            programming languages and a proven track record of delivering high
+            quality software solutions. Experienced in full-stack development
+            and adapted at problem-solving and collaboration in diverse teams.
           </p>
         </div>
         <svg
@@ -37,7 +38,8 @@ export default function Home() {
       </section>
       <section className="home-about_me">
         <div className="home-about_me_container max_resolution">
-          <h2>Know me</h2>
+          <h2>Along the years</h2>
+          {/* <h2>Know me</h2> */}
           {/* <h3>Along the years</h3> */}
           <div className="home-about_me_history_container flex">
             <div className="history_container_lines"></div>
@@ -47,76 +49,85 @@ export default function Home() {
               id="history"
               className="home-about_me_history_container_items max_resolution"
             >
-              <div className="history_container_item left">
-                <label >2011 to 2017</label>
-                <p>
-                  I’ve always loved the nature, for that reason, when I was in
-                  the secondary school, my speciality was agriculture.
-                </p>
+              <div
+                // className="history_container_item left"
+              >
+                <div className="history_container_item left">
+                  <label>Decimo INC</label>
+                  <p>
+                    I started my internship with Decimo after Covid pandemic,
+                    there I could apply all my skills and improve them. Besides,
+                    when I was there I took the rol like web developer.
+                  </p>
+                </div>
               </div>
 
-              <div className="history_container_item right">
-                <label>2017</label>
-                <p>
-                  I performed my last work at secondary in the Earth University
-                  in Costa Rica. I was there as an intern of agriculture. I
-                  enjoyed those moment, and I am fully grateful with the
-                  opportunity they prouded me.
-                </p>
+              <div >
+                <div className="history_container_item right">
+                  <label>University of Costa Rica</label>
+                  <p>
+                    My last year in the university, I had to do a project which
+                    was the biggest and most importan project that I had never
+                    done to that moment. It took one year from the beginning to
+                    its conclusion.
+                  </p>
+                </div>
               </div>
 
-              <div className="history_container_item left">
-                <label >2018 to 2022</label>
-                <p>
-                  I studied business computing in the university of Costa Rica
-                  (UCR). There, I learned about developing, designing, backend,
-                  frontend, networks, database and a little of business
-                  administration and management. I enjoyed each moment there, it
-                  was a wonderful experience.
-                </p>
+              <div >
+                <div className="history_container_item left">
+                  <label>Cocoloco Adventure</label>
+                  <p>
+                    This is my most important experience, because, I started to
+                    work with Cocoloco Adventure when I was a teenager to the
+                    present. I beginning like mechanic there, then my position
+                    was changed, thanks to my university. Now, I am in change of
+                    finances.
+                  </p>
+                </div>
               </div>
 
-              <div className="history_container_item right">
-                <label >2021</label>
-                <p>
-                  That year, I worked with Decimo inc as intern, there, I
-                  learned a lot of about frontend (CSS, HTML and JS) and work as
-                  a team. I was with them only for 4 month and enjoyed a lot of
-                  being there with them.
-                </p>
+              <div >
+                <div className="history_container_item right">
+                  <label>Freelance</label>
+                  <p>
+                    While I have worked to Cocoloco, I have been the opportunity
+                    to participate in different projects like freelance. I have
+                    made websites, deploys websites, have checked the SEO as
+                    have designed websites in XD. This has been a challenge for
+                    my, but I love it, that I can improve my skills.
+                  </p>
+                </div>
               </div>
 
-              <div className="history_container_item left">
-                <label >2022</label>
+              {/* <div className="history_container_item left">
+                <label>2022</label>
                 <p>
-                  I did my final work of the university at my same university. I
-                  worked doing a software for the orientation department, which
-                  was a success.
+                While I have worked to Cocoloco, I have been the opportunity to participate in different projects like freelance. I have made websites, deploys websites, have checked the SEO as have designed websites in XD. This has been a challenge for my, but I love it, that I can improve my skills. 
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
-        <div className="more_about_me max_resolution">
-          <h3>I will talk to you a bit more about me</h3>
-          <div className="more_about_me_container_p">
-            <p>
-              So, when I’m not at home, I like doing a lot of things, I love
-              swimming in the ocean, besides, I love trying new places for
-              eating. However, I have been in love with the cameras ever,
-              therefore, I usually go out for taking photos. I love spending
-              time with my family and friends, maybe doing a BBQ, looking at the
-              stars in the sky.
-            </p>
+        <div className="sub_section_more_about_me">
+          <div className="more_about_me max_resolution">
+            <h3>I will talk to you a bit more about me</h3>
+            <div className="more_about_me_container_p">
+              <p>
+                In my free time, I tend to do a lot of things like spend time
+                with my family, I love that, I considered that as the most
+                important hobby in my life, besides that, I love to sit on the
+                sand, earring and looking at the sea. In any place, I carry my
+                camera with me, I am a big fan of taking pictures and prefer the
+                portraits. I always want to try new kind of food, My favorite is
+                the Italian food.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="wave_history">
-          <div className="wave_history_false_background"></div>
-          <img
-            className="home_wave-container"
-            src={wave }
-            alt="wave"
-          />
+          <div className="wave_history">
+            <div className="wave_history_false_background"></div>
+            <img className="home_wave-container" src={wave} alt="wave" />
+          </div>
         </div>
       </section>
 
@@ -138,6 +149,9 @@ export default function Home() {
                   <div className="flex-center">
                     <span>JS</span>
                   </div>
+                  <div className="flex-center">
+                    <span>React</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -154,6 +168,12 @@ export default function Home() {
                   <div className="flex-center">
                     <span>JAVA</span>
                   </div>
+                  <div className="flex-center">
+                    <span>Python</span>
+                  </div>
+                  <div className="flex-center">
+                    <span>Ruby</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -163,6 +183,9 @@ export default function Home() {
                 <div className="technologie_items_container_technologies flex">
                   <div className="flex-center">
                     <span>Laravel</span>
+                  </div>
+                  <div className="flex-center">
+                    <span>Rails</span>
                   </div>
                   <div className="flex-center">
                     <span>.NET</span>
@@ -205,7 +228,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Photography/>
+      <Photography />
     </>
   );
 }

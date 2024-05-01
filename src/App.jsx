@@ -14,7 +14,7 @@ function App() {
     <>
       <ScrollTop/>
       <NavBar />
-      <div className="false_header"></div>
+      {/* <div className="false_header"></div> */}
       <main id="main">
         <Routes>
           <Route path="/" element={<Home />} />

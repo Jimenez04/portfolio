@@ -34,7 +34,7 @@ export default function footer() {
             <div className="footer_social_container flex">
               <a
                 className="flex"
-                href="https://www.facebook.com/joseenrique.jimenezsoto/"
+                href="https://www.facebook.com/josejimenezsoto04"
                 target="_blank"
               >
                 Facebook{" "}
@@ -44,7 +44,7 @@ export default function footer() {
               </a>
               <a
                 className="flex"
-                href="https://instagram.com/jose_jimenez_0401?igshid=OGQ5ZDc2ODk2ZA=="
+                href="https://www.instagram.com/jose_jimenez0199"
                 target="_blank"
               >
                 Instagram{" "}

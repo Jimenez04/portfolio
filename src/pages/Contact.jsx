@@ -27,7 +27,7 @@ export default function Contact() {
             <a
               target="_blank"
               className="social_media_container_facebook icon_social_media_contact "
-              href="https://www.facebook.com/joseenrique.jimenezsoto/"
+              href="https://www.facebook.com/josejimenezsoto04"
             >
               <img
                 className="lazyload"
@@ -63,7 +63,7 @@ export default function Contact() {
             <a
               target="_blank"
               className="social_media_container_instagram icon_social_media_contact "
-              href="https://instagram.com/jose_jimenez_0401?igshid=OGQ5ZDc2ODk2ZA=="
+              href="https://www.instagram.com/jose_jimenez0199"
             >
               <img
                 className="lazyload"
