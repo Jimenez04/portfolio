@@ -147,6 +147,7 @@ section.hero p {
 .home-about_me_container {
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 4rem;
 }
 #history {
     display: flex;
@@ -177,6 +178,27 @@ section.hero p {
 .history_container_item:first-of-type {
     margin-top: 100px !important;
 }
+.history_container_item > div {
+    flex-direction: column;
+    width: 100%;
+}
+#history .history_container_item.right  {
+    justify-content: start;
+}
+#history .history_container_item.left {
+    justify-content: end;
+}
+#history .history_container_item.right > div {
+    border-radius: 0 180px;
+    align-items: end;
+}
+#history .history_container_item.left > div {
+    border-radius: 180px 0;
+}
+
+
+
+
 .more_about_me {
     margin: 0 auto 0;
     position: relative;
@@ -298,19 +320,17 @@ section.hero p {
         height: 84%;
     }
     #history {
-        gap: 200px;
+        gap: 22rem;
         width: 70vw;
         padding-bottom: 0;
     }
     .history_container_item {
         margin-top: 0 !important;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        /* position: relative; */
+        display: inline-flex;
         min-height: 280px;
     }
-    .history_container_item::before {
+    /* .history_container_item::before {
         position: absolute;
         content: "";
         background-color: var(--lightcian);
@@ -319,14 +339,11 @@ section.hero p {
         max-width: 600px;
         height: 100%;
         z-index: -1;
-    }
-    #history .history_container_item.right::before {
-        right: -100px !important;
-        border-radius: 0 180px;
-    }
-    #history .history_container_item.left::before {
-        left: -100px !important;
-        border-radius: 180px 0;
+    } */
+    .history_container_item > div {
+        background-color: var(--lightcian);
+        padding: 60px 80px;
+        width: 50%;
     }
     .history_container_item:first-of-type {
         margin-top: 150px !important;
@@ -338,7 +355,7 @@ section.hero p {
     #history .history_container_item p {
         font-size: 0.85rem;
         color: var(--white);
-        width: 45%;
+        width: 85%;
     }
     #technologies {
         padding-top: 180px;
@@ -398,7 +415,7 @@ section.hero p {
     .history_container_lines {
         width: 85%;
         height: 100%;
-        background-size: 100% 101%;
+        background-size: 100% 100%;
     }
     .history_container_item:first-of-type {
         margin-top: 200px !important;

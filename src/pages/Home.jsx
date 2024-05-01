@@ -49,10 +49,8 @@ export default function Home() {
               id="history"
               className="home-about_me_history_container_items max_resolution"
             >
-              <div
-                // className="history_container_item left"
-              >
-                <div className="history_container_item left">
+              <div className="history_container_item left flex">
+                <div className=" flex ">
                   <label>Decimo INC</label>
                   <p>
                     I started my internship with Decimo after Covid pandemic,
@@ -62,8 +60,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div >
-                <div className="history_container_item right">
+              <div className="history_container_item left right">
+                <div className="flex">
                   <label>University of Costa Rica</label>
                   <p>
                     My last year in the university, I had to do a project which
@@ -74,8 +72,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div >
-                <div className="history_container_item left">
+              <div className="history_container_item left flex">
+                <div className=" flex ">
                   <label>Cocoloco Adventure</label>
                   <p>
                     This is my most important experience, because, I started to
@@ -87,8 +85,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div >
-                <div className="history_container_item right">
+              <div className="history_container_item left right">
+                <div className="flex">
                   <label>Freelance</label>
                   <p>
                     While I have worked to Cocoloco, I have been the opportunity
